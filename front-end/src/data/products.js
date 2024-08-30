@@ -1,0 +1,110 @@
+const products = [
+    {
+        id: 1,
+        name: 'Product 1',
+        price: 29.99,
+        image: 'https://m.media-amazon.com/images/I/71NR4MwqkjL._AC_UY1100_.jpg',
+        category: 'Category A',
+    },
+    {
+        id: 2,
+        name: 'Product 2',
+        price: 39.99,
+        image: 'https://rukminim2.flixcart.com/image/850/1000/xif0q/shirt/f/s/u/s-329tk252-selvia-original-imagupvb6gzvm5vu.jpeg?q=90&crop=true',
+        category: 'Category B',
+    },
+    {
+        id: 3,
+        name: 'Product 3',
+        price: 29.99,
+        image: 'https://d6kigqwjl9u8w.cloudfront.net/catalog/product/cache/1d5df636cf8c8988ea2d2c570bb7c21d/1/_/1_lw-9147_pink-4.jpg',
+        category: 'Category A',
+    },
+    {
+        id: 4,
+        name: 'Product 4',
+        price: 39.99,
+        image: 'https://5.imimg.com/data5/NQ/RP/FV/ANDROID-78013967/product-jpeg-500x500.jpg',
+        category: 'Category B',
+    },
+    {
+        id: 5,
+        name: 'Product 5',
+        price: 29.99,
+        image: 'https://lajreedesigner.com/cdn/shop/products/KPR-120-Wine_2_1200x1200.jpg?v=1669028942',
+        category: 'Category A',
+    },
+    {
+        id: 6,
+        name: 'Product 6',
+        price: 39.99,
+        image: 'https://images-cdn.ubuy.co.in/64b1d3a6dc67225545037a68-sarees-for-women-art-silk-woven-saree-l.jpg',
+        category: 'Category B',
+    },
+    {
+        id: 7,
+        name: 'Product 7',
+        price: 29.99,
+        image: 'https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/lifestyle/1000013983599-Yellow-Yellow-1000013983599_01-2100.jpg',
+        category: 'Category A',
+    },
+    {
+        id: 8,
+        name: 'Product 8',
+        price: 39.99,
+        image: 'https://www.jaipuriadaah.com/cdn/shop/files/DSC_2176copy_600x.jpg?v=1688634680',
+        category: 'Category B',
+    },
+    {
+        id: 9,
+        name: 'Product 9',
+        price: 29.99,
+        image: 'https://5.imimg.com/data5/ANDROID/Default/2023/2/QO/FG/LA/21804803/product-jpeg-500x500.jpg',
+        category: 'Category A',
+    },
+    {
+        id: 10,
+        name: 'Product 10',
+        price: 39.99,
+        image: 'https://odyssia.in/wp-content/uploads/2023/11/R-1506-PURPLE.webp',
+        category: 'Category B',
+    },
+    {
+        id: 11,
+        name: 'Product 11',
+        price: 29.99,
+        image: 'https://sc04.alicdn.com/kf/H21bd2d4b6ce046f382d4619b0502627b9.jpg',
+        category: 'Category A',
+    },
+    {
+        id: 12,
+        name: 'Product 12',
+        price: 39.99,
+        image: 'https://www.jiomart.com/images/product/original/rvvzkg65or/shamriz-women-girl-sling-bag-handbag-purse-side-sling-bag-pink-product-images-rvvzkg65or-0-202211171648.jpg?im=Resize=(500,630)',
+        category: 'Category B',
+    },
+    {
+        id: 13,
+        name: 'Product 13',
+        price: 39.99,
+        image: 'https://images.herzindagi.info/image/2023/Apr/Ladies-Bag-.jpg',
+        category: 'Category B',
+    },
+    {
+        id: 14,
+        name: 'Product 14',
+        price: 39.99,
+        image: 'https://image.made-in-china.com/2f0j00RiTzsrGtICkc/Professional-Large-Makeup-Aluminium-Vanity-Box-Beauty-Train-Cosmetic-Case.webp',
+        category: 'Category B',
+    },
+    {
+        id: 15,
+        name: 'Product 15',
+        price: 39.99,
+        image:'https://royalkart.in/cdn/shop/products/professional-cosmetics-makeup-kit-storage-organizer-box-for-bridal-gift-pinkprofessional-vanity-bagsroyalkart-the-urban-store-894589.jpg?v=1678454692',
+        category: 'Category B',
+    }
+    // Add more products as needed
+];
+
+export default products;

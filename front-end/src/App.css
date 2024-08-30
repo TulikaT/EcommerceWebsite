@@ -1,0 +1,933 @@
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+/* background-color: #000000; */
+  } 
+
+
+  /* App.css */
+.App {
+  padding-top: 70px; /* Adjust this value based on your navbar height */
+  transition: background-color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+/* Adjusting dark mode styles */
+.App.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.App.light-mode {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text */
+}
+
+
+
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000; /* Change to desired color */
+}
+
+.cart-icon a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap into the next line */
+  justify-content: space-around; /* Adjusts space around the items */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc; /* Optional: adds a border to each product */
+  border-radius: 8px; /* Optional: rounds the corners */
+  padding: 10px;
+  text-align: center;
+  width: 20dvh; /* Fixed width for each product */
+  transition: transform 0.2s; /* Adds a transition effect */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Slightly enlarges the product on hover */
+}
+
+.product img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Keeps the aspect ratio */
+}
+
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  h1{
+    margin-top: 8dvh;
+  }
+}
+
+/* Product.css */
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 28dvh;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: fit-content;
+  border-radius: 8px;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: #555;
+  font-size: 1.1em;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar.css */
+.navbar {
+  position: fixed; /* Keep the navbar fixed at the top */
+  top: 0;
+  left: 0; /* Ensure it starts from the left */
+  width: 100%; /* Take full width */
+  background-color: #fff; /* Background color of the navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add padding for spacing */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Vertically center logo and text */
+}
+
+.logo {
+  width: 40px; /* Logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+  font-size: 24px; /* Adjust size as needed */
+  margin: 0; /* Remove default margin */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between nav links */
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center vertically */
+  padding: 10px 20px; /* Padding around navbar */
+  background-color: #f8f8f8; /* Background color */
+  width: 100%; /* Full width */
+  position: fixed; /* Fix navbar to the top */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.nav-links {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Flex display for the links */
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+  display: inline; /* Inline display for list items */
+}
+
+/* Navbar.css */
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center vertically */
+  padding: 10px 20px; /* Padding around navbar */
+  /* width: 100%; Full width */
+  position: fixed; /* Fix navbar to the top */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it's on top */
+  background-color: var(--navbar-bg); /* Background color */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Light and Dark mode navbar styles */
+.navbar.light {
+  background-color: white; /* Light background */
+}
+
+.navbar.dark {
+  background-color: #121212; /* Dark background for visibility */
+}
+
+/* Logo Text Styles */
+.logo-text {
+  color: var(--navbar-text); /* Ensure logo text color is set correctly */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Flex display for the links */
+  gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove default underline */
+  color: var(--navbar-text); /* Text color */
+  padding: 10px 15px; /* Padding for the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover Effects */
+.nav-links a:hover {
+  background-color: var(--navbar-hover-bg); /* Background on hover */
+  color: var(--navbar-hover-text); /* Text color on hover */
+}
+
+/* Active State */
+.nav-links a:active {
+  background-color: var(--navbar-active-bg); /* Background when active */
+}
+
+/* Default Styles (Light Mode) */
+:root {
+  --navbar-bg: rgb(197, 40, 40); /* Light background */
+  --navbar-text: black; /* Dark text */
+  --navbar-hover-bg: rgba(0, 0, 0, 0.1); /* Light hover background */
+  --navbar-hover-text: #007BFF; /* Light hover text color */
+  --navbar-active-bg: rgba(0, 0, 0, 0.2); /* Light active background */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --navbar-bg: #121212; /* Dark background */
+  --navbar-text: rgb(243, 238, 238); /* Light text */
+  --navbar-hover-bg: rgba(255, 255, 255, 0.1); /* Dark hover background */
+  --navbar-hover-text: #00BFFF; /* Dark hover text color */
+  --navbar-active-bg: rgba(255, 255, 255, 0.2); /* Dark active background */
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+  width: 50px;
+  height: 24px;
+  background-color: lightgray; /* Default background */
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Transition for toggle */
+}
+
+.toggle-switch.active {
+  background-color: #69696767; /* Active background color */
+}
+
+.toggle-thumb {
+  width: 22px; /* Thumb size */
+  height: 22px;
+  background-color: rgb(0, 0, 0); /* Default thumb color */
+  border-radius: 50%;
+  position: absolute;
+  top: 1px; /* Position thumb */
+  left: 1px; /* Position thumb */
+  transition: transform 0.2s ease; /* Transition for thumb movement */
+}
+
+.toggle-switch.active .toggle-thumb {
+  transform: translateX(26px); /* Move to the right */
+}
+
+.navbar {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+}
+
+.nav-links a:hover {
+  background-color: var(--navbar-hover-bg);
+  color: var(--navbar-hover-text);
+}
+
+.nav-links a:active {
+  background-color: var(--navbar-active-bg);
+}
+
+/* Cart Styles */
+.cart-container {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column; /* Use column direction for the cart items */
+  gap: 15px; /* Space between cart items */
+  width: 100%; /* Full width */
+}
+
+.cart-item {
+  display: flex; /* Flex display for cart item */
+  align-items: center; /* Align items vertically */
+  border: 1px solid #ccc; /* Optional: adds a border to each item */
+  border-radius: 8px; /* Optional: rounds the corners */
+  padding: 10px; /* Padding inside cart items */
+  background-color: #f9f9f9; /* Background color for better visibility */
+}
+
+.cart-item-image {
+  width: 100px; /* Set a fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and details */
+}
+
+.cart-item-details {
+  flex: 1; /* Take remaining space */
+}
+
+.cart-item-name {
+  margin: 0; /* Remove default margin */
+}
+
+.cart-item-price {
+  color: #555; /* Price color */
+}
+
+.remove-button {
+  background-color: #ff4d4d; /* Red background for remove button */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 15px; /* Padding for button */
+  cursor: pointer; /* Cursor change on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.remove-button:hover {
+  background-color: #e60000; /* Darker red on hover */
+}
+
+
+.form-container {
+  max-width: 400px; /* Limit the width of the form */
+  margin: 50px auto; /* Center the form */
+  padding: 20px; /* Add padding */
+  background-color: #f9f9f9; /* Light background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-header {
+  text-align: center; /* Center the header */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.form-input {
+  width: 100%; /* Full width */
+  padding: 10px; /* Add padding */
+  margin: 10px 0; /* Space between inputs */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+.form-button {
+  width: 100%; /* Full width */
+  padding: 10px; /* Add padding */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.form-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.form-footer {
+  text-align: center; /* Center the footer */
+  margin-top: 10px; /* Space above the footer */
+}
+
+.form-footer a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.form-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.error-message {
+  color: red; /* Color for error message */
+  margin: 10px 0; /* Space above and below the error message */
+  text-align: center; /* Center the error message */
+}
+
+.product-detail {
+  text-align: center;
+  margin: 20px;
+}
+
+.product-detail-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-detail-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product-detail-price {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  transition: transform 0.3s;
+  background-color: #fff; /* Light background for light mode */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  margin-top: 12px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #777;
+  margin: 8px 0;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+
+.product-detail {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.product-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-detail-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 12px 0;
+}
+
+.product-detail-price {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin: 12px 0;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.back-link {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light background color */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 20px;
+}
+
+.product-detail {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.product-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-detail-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 12px 0;
+}
+
+.product-detail-price {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin: 12px 0;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px; /* Add space below the button */
+  width: 100%; /* Make button full width */
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.back-link {
+  margin-top: 20px; /* Space above the link */
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  border: 2px solid #007bff; /* Add border for visual appeal */
+  border-radius: 4px;
+  padding: 10px 16px; /* Padding for the link button */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  background-color: #007bff; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+h1{
+  margin-top: 11dvh;
+}
+@media (max-width: 668px) {
+  .home-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.cart-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-list {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.remove-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #d62839;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Checkout.css */
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.checkout-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+  .checkout-container {
+      padding: 20px;
+      margin: 10px;
+  }
+}
+/* Checkout.css */
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.checkout-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+  .checkout-container {
+      padding: 20px;
+      margin: 10px;
+  }
+}
+
+/* App.css */
+.cart-container {
+  padding: 20px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cart-item-image {
+  width: 20dvh;
+  height: 50%;
+  margin-right: 10px;
+}
+
+.checkout-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.checkout-button:hover {
+  background-color: #45a049;
+}
+
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #292928;
+  --text-light: #000000;
+  --text-dark: #000000;
+  --primary-color: #007bff;
+  --hover-color: #0056b3;
+}
+h1 .dark-mode{
+
+  text-shadow: 6px 6px 20px white, 2px 2px 0 white;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.App {
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.App.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg-light);
+  transition: background-color 0.3s ease;
+}
+
+/* Product Styles */
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  background-color: var(--bg-light);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+
+
